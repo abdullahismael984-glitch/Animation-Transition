@@ -1,0 +1,334 @@
+*{
+     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  Arial, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: aliceblue;
+   
+}
+nav{
+   margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    border: 1px solid white;
+     background-color: white;
+     padding: 20px;
+     height: 80px;
+      animation: movebottomto 1s 1;
+   
+}
+@keyframes movebottomto {
+    0%{
+        transform: translatey(-500px);
+    }
+    100%{
+        transform: translatey(0px);
+    }
+}
+div a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    
+}
+a:hover{
+    color: rgb(49, 49, 230) ;
+}
+span{
+    color: rgb(49, 49, 230);
+
+}
+section{
+   
+    margin: 1px;
+    padding: 10px; 
+    border: 1 solid white;
+    background-color:white;
+    border-radius: 10px;
+    height: fit-content;
+   width: fit-content;
+}
+.sw img{
+     animation: moveright 1s 1;
+}
+@keyframes moveright {
+    0%{
+        transform: translatex(-500px);
+    }
+    100%{
+        transform: translatex(0px);
+    }
+}
+.sw{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: fit-content;
+    
+}
+.h2{
+    color: rgb(49, 49, 230);
+}
+button{
+    background-color:  rgb(49, 49, 230);
+    padding: 7px;
+}
+ section{
+    display: inline-block;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+ 
+    margin: 10px;
+ }
+h2{
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 50px;
+    color: #333;
+}
+ .img { 
+    position: relative; 
+    overflow: hidden;
+}
+ .img img {  
+     width: 100%; 
+     height: 200px;  
+     object-fit: cover;  
+     transition: transform 0.3s ease;
+}  
+.card:hover .img img { 
+      transform: scale(1.05); 
+}
+.img {
+       position: relative;
+       overflow: hidden;
+} 
+ .img {
+         width: 100%; 
+         height: 200px;
+         object-fit: cover; 
+         transition: transform 0.3s ease;
+
+ } 
+
+ .card:hover .img { 
+      transform: scale(1.05);
+ } 
+ .blog-category {   
+    position: relative;  
+     top: -195px; 
+      left: 10px;  
+      width: fit-content;
+     background-color: #007bff;  
+     color: white;  
+      padding: 5px 12px;   
+    border-radius: 20px;
+    font-size: 0.8rem;  
+    font-weight: 600;
+ }
+ .content {  
+     padding: 25px; 
+}
+.meta {   
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 15px; 
+    font-size: 0.85rem 
+   
+ }
+ 
+
+
+.content h3 { 
+     font-size: 1.3rem;
+     margin-bottom: 15px;
+    color: #333; 
+    line-height: 1.4; 
+}  
+.content p {  
+     color: #666;  
+     line-height: 1.6;  
+     margin-bottom: 20px; 
+} 
+.read-more {
+     color: #007bff;
+      text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+ }
+  .read-more:hover {
+     color: #0056b3;
+ } 
+ .web{
+    position: absolute;
+   padding-bottom:px ;
+    padding: 5px 12px;
+    font-size: 0.8rem;
+    font-size: 600;
+ }
+ @media screen and (max-width= "756px") {
+    .cotainercard{
+        width: 100%;
+         height:50vh ;
+    }
+    nav{
+        height: fit-content;
+    }
+   
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+.overlay {
+    position: relative;
+    width: 500px;
+    height: 150px;
+}
+
+.overlay img {
+    width: 500px;
+    height: 150px;
+    display: block;
+}
+
+.overlay p,
+.overlay .btn-p {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+}
+
+.overlay:hover p,
+.overlay:hover .btn-p {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overlay p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: white;
+    width: 80%;
+    text-align: center;
+}
+
+.overlay .btn-p {
+    position: absolute;
+    top:90%;
+    left: 50%;
+    margin-right: 20px;
+   padding: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+.overlay:hover {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sw {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+
+
+.sw > div {
+  flex: 1;
+  min-width: 280px; 
+}
+
+
+@media (max-width: 768px) {
+  .sw {
+    flex-direction: column;
+    text-align: center;   
+  }
+
+ 
+  nav {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+}
